@@ -9,12 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
   </head>
   <body>
- 
     <main>
       <h1>Programming on Solana when you’ve just installed Linux and don’t know what an npm is…</h1>
-      <p>This tutorial assumes a debian-based linux system (Ubuntu, etc.) </p>
-      <p>If you’re completely new, check out Pop_OS. It’s very user friendly and comes with a lot of useful stuff already installed.</p>
-      <p>Once you’ve got your OS installed and booted up, the first place to go is the terminal.</p>
+      <p>Alright so to start off this tutorial is for anyone brand new to programming and just thinks Solana is cool and is like “Yes, now I want to learn programming”. Welcome. </p>
+      <p>Understanding how programs written in Rust on Solana work is really challenging. But you just wanna see what all the fuss is about. So you go to the tutorials and you’re like “wait a sec, I dunno how to use GitHub.” </p>
+      <p>This tutorial covers the stuff that comes before most of the programming tutorials out there, stuff that most developers find obvious, but takes hours of pain to figure out the first time.</p>
+      <h3>This tutorial assumes a debian-based linux system (Ubuntu, etc.) </h3>
+      <p>If you’re completely new, check out <a href="https://support.system76.com/articles/install-pop/">Pop_OS</a>. It’s very user friendly and comes with a lot of useful stuff already installed.</p>
+      <h3>Once you’ve got your OS installed and booted up, the first place to go is the terminal.</h3>
       <p>Check out this <a href="https://launchschool.com/books/command_line/read/command_line_interface">tutorial</a> to understand the terminal better </p>
       <p>
         The next thing we’ll need is an editor for our code. 
@@ -23,22 +25,22 @@
         (typing “vim” in the terminal will give install options. 
         After it installs, type “vimtutor” to learn more.)
       </p>
-      <p>To install VS Code, download the .deb file from their website.</p>
+      <h3>To install VS Code, download the .deb file from their website.</h3>
       <ul>
         <li>Once downloaded, type “sudo apt install &lt;path to your file&gt;”</li>
         <li>The command for mine which was in the Downloads folder, looked like “sudo apt install ./Downloads/code_1.61.2-1634656828_amd64.deb”</li>
         <li>“./” represents the directory you are currently in. </li>
         <li>If I “cd” into Downloads first my command would be “sudo apt install ./code_1.61.2-1634656828_amd64.deb”</li>
       </ul>
-      <p>Next is learning git and setting up a Github account.</p>
+      <h3>Next is learning git and setting up a Github account.</h3>
       <ul>
         <li>Start here with this <a href="http://jlord.us/git-it/">tutorial</a> for an overview of git and Github.</li>
       </ul>
       <p>Now that we’re setup on Github it is time to fire up some code!</p>
-      <p>Go to the <a href="https://github.com/solana-labs/example-helloworld">solana-labs/example-helloworld</a> repository</p>
+      <h3>Go to the <a href="https://github.com/solana-labs/example-helloworld">solana-labs/example-helloworld</a> repository</h3>
       <p>Fork and clone the repo. Follow the steps <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">here</a></p>
       <p>Now that we have a local copy, start looking at the README.md. The first step is installing dependencies, the software needed to run our code.</p>
-      <p>Installing node is first</p>
+      <h3>Installing node is first.</h3>
       <ul>
         <li>We will use “node version manager” or “nvm”.</li>
         <li>Go <a href="https://github.com/nvm-sh/nvm">here</a>, scroll down and check out the readme.</li>
@@ -47,22 +49,15 @@
         <li>To install node type “nvm install 14”. This will install node 14.18.1, as well as “node package manager” or “npm”.</li>
       </ul>
       <p>Check your versions with “node -v” and “npm -v” commands in the terminal.</p>
-      <p>Next is installing Rust. This is pretty straightforward. Follow the excellent getting started page <a href="https://www.rust-lang.org/learn/get-started">here</a>.</p>
-      <p>
-        Finally, install the <a href="https://docs.solana.com/cli/install-solana-cli-tools">solana command line tool suite</a>. 
+      <h3>Next is installing Rust.</h3>
+      <p>This is pretty straightforward. Follow the excellent getting started page <a href="https://www.rust-lang.org/learn/get-started">here</a>.</p>
+      <h3>Finally, install the <a href="https://docs.solana.com/cli/install-solana-cli-tools">solana command line tool suite</a>.</h3>
+      <p> 
         Follow the instructions under the “MacOS and Linux” heading.
         Once typing “solana --version” is working you’re ready to go!
       </p>
-      <p>I'll leave it here for now. This is everything you need to get going on the first line of "solana-labs/example-helloworld" readme</p>
-      <p>More stuff to explain later...</p>
-      <ul>
-        <li>Explain clusters and localhost</li>
-        <li>Explain the keygen command -> which file path does it end up in. What is being created (byte array)</li>
-        <li>Npm install, what does it do?</li>
-        <li>Npm run build:program-rust</li>
-      </ul>
+      <h4>I'll leave it here for now. This is everything you need to get going on the first line of "solana-labs/example-helloworld" readme. Have fun!</h4>
     </main>
-
     <script 
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" 
       integrity="sha256-oUJV5o/Jn8W0qLMjwTBwrGf0J3WRdwb9OxR7Q2gQpdo=" 
